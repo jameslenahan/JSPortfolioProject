@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <title>Poker Hand Selector</title>
+</head>
+<body>
+<div class="container">
+    <h1 id="main-title">Poker Hand Selector</h1>
+    <div id="form-show-buttons">
+        <button class="button" id="add-hand" type="button" name="button">Click here to add a hand</button>
+        <span id="or"> </span>
+        <button class="hidden" id="filter-button" type="button" name="button"></button>
+    </div>
+    <div id="filter-drop-down" class="hidden">
+        <h3>Get a random hand:</h3>
+        <select id="filter-dropdown">
+            <option value="" disabled selected>Select your card</option>
+        </select>
+    </div>
+    <div class="form">
+        <form id="new-hand-form" class="hidden">
+            <label for="hand-title">Title</label><br>
+            <input type="text" name="hand-title"><br>
+
+            <label for="pieces-name">Cards</label><br>
+            <input type="text" name="pieces" placeholder="Enter cards"><br>
+            <input id="form-submit" type="submit" value="Add Hand">
+        </form>
+
+        <button id="sort-button" type="button" name="sortbutton">Sort</button>
+    </div>
+    <div id="hand-card-container">
+
+    </div>
+</div>
+<script type="application/javascript" src="src/components/hand.js" charset="utf-8"></script>
+<script type="application/javascript" src="src/components/hands.js" charset="utf-8"></script>
+<script type="application/javascript" src="src/components/pieces.js" charset="utf-8"></script>
+<script type="application/javascript" src="src/components/app.js" charset="utf-8"></script>
+<script type="application/javascript" src="src/adapters/HandsAdapter.js" charset="utf-8"></script>
+<script type="application/javascript" src="src/adapters/PiecesAdapter.js" charset="utf-8"></script>
+<script type="application/javascript" src="src/index.js" charset="utf-8"></script>
+</body>
+
+</html>
